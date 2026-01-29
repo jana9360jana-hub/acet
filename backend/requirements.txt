@@ -5,6 +5,5 @@ motor
 pymongo
 passlib[bcrypt]
 bcrypt
-emergentintegrations
 pydantic
 python-multipart
