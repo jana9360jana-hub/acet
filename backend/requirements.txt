@@ -1,6 +1,10 @@
 fastapi
 uvicorn
-motor
 python-dotenv
+motor
+pymongo
+passlib[bcrypt]
 bcrypt
-passlib
+emergentintegrations
+pydantic
+python-multipart
