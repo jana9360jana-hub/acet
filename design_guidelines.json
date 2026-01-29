@@ -1,0 +1,151 @@
+{
+  "identity": {
+    "persona": "E1",
+    "style": "Swiss Tech & High-Contrast",
+    "principles": [
+      "Fusion over Imitation: Mix Academic Rigor with SaaS Precision",
+      "Emotion First: Confidence and Focus",
+      "Content is King: Data clarity for Admins, Task focus for Students",
+      "Zoom In: Bold metrics and clear code typography",
+      "Negative Space: generous padding to reduce cognitive load"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["500", "700"],
+      "usage": "Page titles, Section headers, Modal titles"
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, UI labels, Form inputs"
+    },
+    "code": {
+      "family": "JetBrains Mono, monospace",
+      "weights": ["400"],
+      "usage": "Code editor, Output logs, Snippets"
+    }
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "primary": {
+        "DEFAULT": "#2563EB",
+        "foreground": "#FFFFFF",
+        "description": "Royal Blue - Trust, Academic, Tech"
+      },
+      "secondary": {
+        "DEFAULT": "#F1F5F9",
+        "foreground": "#0F172A",
+        "description": "Slate 100 - Subtle backgrounds"
+      },
+      "accent": {
+        "DEFAULT": "#F59E0B",
+        "foreground": "#FFFFFF",
+        "description": "Amber - Warnings, Timers, Highlights"
+      },
+      "background": "#FFFFFF",
+      "foreground": "#0F172A",
+      "muted": "#64748B",
+      "border": "#E2E8F0",
+      "success": "#10B981",
+      "error": "#EF4444"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)",
+      "subtle": "linear-gradient(to bottom right, #F8FAFC, #F1F5F9)"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "p-6 md:p-12",
+      "section_gap": "gap-8",
+      "element_gap": "gap-4"
+    },
+    "grids": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "bento_hero": "col-span-full md:col-span-8 row-span-2",
+      "bento_sidebar": "col-span-full md:col-span-4 row-span-2",
+      "bento_stat": "col-span-6 md:col-span-3"
+    },
+    "radius": {
+      "default": "rounded-lg",
+      "button": "rounded-md",
+      "card": "rounded-xl"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm font-medium px-6 py-2.5 transition-all active:scale-95",
+      "secondary": "bg-white border border-input hover:bg-accent hover:text-accent-foreground shadow-sm font-medium px-6 py-2.5 transition-all active:scale-95",
+      "ghost": "hover:bg-secondary hover:text-secondary-foreground transition-colors"
+    },
+    "cards": {
+      "base": "bg-white border border-border shadow-sm hover:shadow-md transition-shadow duration-200",
+      "interactive": "cursor-pointer hover:border-primary/50 hover:shadow-lg transition-all duration-300 group"
+    },
+    "inputs": {
+      "base": "h-11 bg-white border-input focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+    },
+    "badges": {
+      "beginner": "bg-green-100 text-green-700 border-green-200",
+      "intermediate": "bg-blue-100 text-blue-700 border-blue-200",
+      "advanced": "bg-purple-100 text-purple-700 border-purple-200",
+      "master": "bg-orange-100 text-orange-700 border-orange-200"
+    }
+  },
+  "assets": {
+    "images": {
+      "login_bg": "https://images.unsplash.com/photo-1536982679170-1b2277759c92?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "student_hero": "https://images.unsplash.com/photo-1710438597462-32b8fabf8dba?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "abstract_bg": "https://images.unsplash.com/photo-1765046255478-55efc763637c?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "logo_placeholder": "https://via.placeholder.com/150x50?text=ACET+Logo"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred_set": ["Code", "BookOpen", "Trophy", "Clock", "Users", "LogOut", "ShieldAlert", "CheckCircle"]
+    }
+  },
+  "pages": {
+    "login": {
+      "layout": "Split screen: Left side branding/image, Right side form",
+      "features": ["Role toggle (Student/Admin)", "Register Number Input", "Secure Password"]
+    },
+    "student_dashboard": {
+      "layout": "Sidebar + Topbar + Bento Grid Content",
+      "sections": [
+        "Welcome Hero (Progress Bar)",
+        "Active Tasks (Coding/MCQ)",
+        "Recent Results (Chart)",
+        "Leaderboard Snippet"
+      ]
+    },
+    "coding_task": {
+      "layout": "Full height, 3-column: Problem Desc | Code Editor | Output/Tests",
+      "features": ["Timer (5min)", "No Copy/Paste Overlay", "Submit Button", "Language Selector (Python/Java/C++)"]
+    },
+    "admin_dashboard": {
+      "layout": "Sidebar + Dense Data Tables",
+      "features": ["Student Management Table (Add/Edit/Delete)", "Analytics Overview (Pass Rates)", "Bulk Upload"]
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "hover_lift": "hover:-translate-y-1",
+    "page_enter": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+  },
+  "universal_guidelines": [
+    "DO NOT use gradients for text or borders, only subtle backgrounds.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for sticky headers.",
+    "You MUST NOT apply universal transition. Eg: transition: all.",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles (pill or sharp rounded-md).",
+    "NEVER use AI assistant Emoji characters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive elements MUST include data-testid attribute."
+  ],
+  "instructions_to_main_agent": "Implement the ACET platform with a focus on academic integrity and modern usability. Use the provided image URLs for backgrounds. Ensure the 'Anti-Cheat' features (no copy-paste) are visually communicated (e.g., warning toasts). Use Shadcn components for all complex UI elements but style them according to the 'Swiss Tech' theme defined here."
+}
